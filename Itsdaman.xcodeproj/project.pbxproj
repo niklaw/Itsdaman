@@ -14,13 +14,17 @@
 		A64460A418A03D7000F5D221 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A64460A318A03D7000F5D221 /* main.m */; };
 		A64460A818A03D7000F5D221 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A64460A718A03D7000F5D221 /* AppDelegate.m */; };
 		A64460AB18A03D7000F5D221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64460A918A03D7000F5D221 /* Main.storyboard */; };
-		A64460AE18A03D7000F5D221 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64460AD18A03D7000F5D221 /* ViewController.m */; };
+		A64460AE18A03D7000F5D221 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64460AD18A03D7000F5D221 /* MasterViewController.m */; };
 		A64460B018A03D7000F5D221 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64460AF18A03D7000F5D221 /* Images.xcassets */; };
 		A64460B718A03D7000F5D221 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64460B618A03D7000F5D221 /* XCTest.framework */; };
 		A64460B818A03D7100F5D221 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A644609718A03D7000F5D221 /* Foundation.framework */; };
 		A64460B918A03D7100F5D221 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A644609B18A03D7000F5D221 /* UIKit.framework */; };
 		A64460C118A03D7100F5D221 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A64460BF18A03D7100F5D221 /* InfoPlist.strings */; };
 		A64460C318A03D7100F5D221 /* ItsdamanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A64460C218A03D7100F5D221 /* ItsdamanTests.m */; };
+		A66DB2DA18A0457000F20B10 /* Itsdaman.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DB2D918A0457000F20B10 /* Itsdaman.m */; };
+		A66DB2DD18A04BA600F20B10 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DB2DC18A04BA600F20B10 /* ExploreViewController.m */; };
+		A66DB2E018A0582800F20B10 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DB2DF18A0582800F20B10 /* CameraViewController.m */; };
+		A66DB2E318A0583600F20B10 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DB2E218A0583600F20B10 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +49,22 @@
 		A64460A618A03D7000F5D221 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A64460A718A03D7000F5D221 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A64460AA18A03D7000F5D221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A64460AC18A03D7000F5D221 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A64460AD18A03D7000F5D221 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A64460AC18A03D7000F5D221 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		A64460AD18A03D7000F5D221 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		A64460AF18A03D7000F5D221 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A64460B518A03D7000F5D221 /* ItsdamanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItsdamanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64460B618A03D7000F5D221 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A64460BE18A03D7100F5D221 /* ItsdamanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ItsdamanTests-Info.plist"; sourceTree = "<group>"; };
 		A64460C018A03D7100F5D221 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A64460C218A03D7100F5D221 /* ItsdamanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItsdamanTests.m; sourceTree = "<group>"; };
+		A66DB2D818A0457000F20B10 /* Itsdaman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Itsdaman.h; sourceTree = SOURCE_ROOT; };
+		A66DB2D918A0457000F20B10 /* Itsdaman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Itsdaman.m; sourceTree = SOURCE_ROOT; };
+		A66DB2DB18A04BA600F20B10 /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
+		A66DB2DC18A04BA600F20B10 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
+		A66DB2DE18A0582800F20B10 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		A66DB2DF18A0582800F20B10 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		A66DB2E118A0583600F20B10 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		A66DB2E218A0583600F20B10 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +127,16 @@
 				A64460A618A03D7000F5D221 /* AppDelegate.h */,
 				A64460A718A03D7000F5D221 /* AppDelegate.m */,
 				A64460A918A03D7000F5D221 /* Main.storyboard */,
-				A64460AC18A03D7000F5D221 /* ViewController.h */,
-				A64460AD18A03D7000F5D221 /* ViewController.m */,
+				A66DB2DE18A0582800F20B10 /* CameraViewController.h */,
+				A66DB2DF18A0582800F20B10 /* CameraViewController.m */,
+				A66DB2E118A0583600F20B10 /* ProfileViewController.h */,
+				A66DB2E218A0583600F20B10 /* ProfileViewController.m */,
+				A66DB2DB18A04BA600F20B10 /* ExploreViewController.h */,
+				A66DB2DC18A04BA600F20B10 /* ExploreViewController.m */,
+				A64460AC18A03D7000F5D221 /* MasterViewController.h */,
+				A64460AD18A03D7000F5D221 /* MasterViewController.m */,
+				A66DB2D818A0457000F20B10 /* Itsdaman.h */,
+				A66DB2D918A0457000F20B10 /* Itsdaman.m */,
 				A64460AF18A03D7000F5D221 /* Images.xcassets */,
 				A644609E18A03D7000F5D221 /* Supporting Files */,
 			);
@@ -249,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A64460AE18A03D7000F5D221 /* ViewController.m in Sources */,
+				A66DB2DD18A04BA600F20B10 /* ExploreViewController.m in Sources */,
+				A64460AE18A03D7000F5D221 /* MasterViewController.m in Sources */,
 				A64460A818A03D7000F5D221 /* AppDelegate.m in Sources */,
+				A66DB2E018A0582800F20B10 /* CameraViewController.m in Sources */,
+				A66DB2E318A0583600F20B10 /* ProfileViewController.m in Sources */,
+				A66DB2DA18A0457000F20B10 /* Itsdaman.m in Sources */,
 				A64460A418A03D7000F5D221 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +484,7 @@
 				A64460C818A03D7100F5D221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A64460C918A03D7100F5D221 /* Build configuration list for PBXNativeTarget "ItsdamanTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +493,7 @@
 				A64460CB18A03D7100F5D221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
