@@ -7,9 +7,18 @@
 //
 
 #import "CameraViewController.h"
+#import "Parse/Parse.h"
+#import "MBProgressHUD.h"
+#include <stdlib.h>
 
-@interface CameraViewController ()
-
+@interface CameraViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, MBProgressHUDDelegate>
+{
+    PFImageView * imageView;
+    MBProgressHUD *refreshHUD;
+    MBProgressHUD * newHud;
+    
+    NSData * imageDatas;
+}
 @end
 
 @implementation CameraViewController
@@ -19,8 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
 }
+
 
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55FE2E25AED446A185D1712C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF86F4C1531743E0A971D228 /* libPods.a */; };
 		A644609818A03D7000F5D221 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A644609718A03D7000F5D221 /* Foundation.framework */; };
 		A644609A18A03D7000F5D221 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A644609918A03D7000F5D221 /* CoreGraphics.framework */; };
 		A644609C18A03D7000F5D221 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A644609B18A03D7000F5D221 /* UIKit.framework */; };
@@ -25,6 +26,10 @@
 		A66DB2DD18A04BA600F20B10 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DB2DC18A04BA600F20B10 /* ExploreViewController.m */; };
 		A66DB2E018A0582800F20B10 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DB2DF18A0582800F20B10 /* CameraViewController.m */; };
 		A66DB2E318A0583600F20B10 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DB2E218A0583600F20B10 /* ProfileViewController.m */; };
+		A6964E8918A189FD00443743 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A6964E8818A189FD00443743 /* MBProgressHUD.m */; };
+		A6964E8B18A19E3900443743 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = A6964E8A18A19E3900443743 /* 37x-Checkmark.png */; };
+		A6964E8E18A1A14300443743 /* Lime.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6964E8C18A1A14300443743 /* Lime.jpg */; };
+		A6964E8F18A1A14300443743 /* Sunflowers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6964E8D18A1A14300443743 /* Sunflowers.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B6A1BA49A87429DAC518B62 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A644609418A03D7000F5D221 /* Itsdaman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Itsdaman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A644609718A03D7000F5D221 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A644609918A03D7000F5D221 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,6 +71,12 @@
 		A66DB2DF18A0582800F20B10 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		A66DB2E118A0583600F20B10 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		A66DB2E218A0583600F20B10 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		A6964E8718A189FD00443743 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A6964E8818A189FD00443743 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A6964E8A18A19E3900443743 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		A6964E8C18A1A14300443743 /* Lime.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lime.jpg; sourceTree = "<group>"; };
+		A6964E8D18A1A14300443743 /* Sunflowers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sunflowers.jpg; sourceTree = "<group>"; };
+		AF86F4C1531743E0A971D228 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 				A644609A18A03D7000F5D221 /* CoreGraphics.framework in Frameworks */,
 				A644609C18A03D7000F5D221 /* UIKit.framework in Frameworks */,
 				A644609818A03D7000F5D221 /* Foundation.framework in Frameworks */,
+				55FE2E25AED446A185D1712C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +111,7 @@
 				A64460BC18A03D7100F5D221 /* ItsdamanTests */,
 				A644609618A03D7000F5D221 /* Frameworks */,
 				A644609518A03D7000F5D221 /* Products */,
+				3B6A1BA49A87429DAC518B62 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +131,7 @@
 				A644609918A03D7000F5D221 /* CoreGraphics.framework */,
 				A644609B18A03D7000F5D221 /* UIKit.framework */,
 				A64460B618A03D7000F5D221 /* XCTest.framework */,
+				AF86F4C1531743E0A971D228 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,6 +139,8 @@
 		A644609D18A03D7000F5D221 /* Itsdaman */ = {
 			isa = PBXGroup;
 			children = (
+				A6964E8718A189FD00443743 /* MBProgressHUD.h */,
+				A6964E8818A189FD00443743 /* MBProgressHUD.m */,
 				A64460A618A03D7000F5D221 /* AppDelegate.h */,
 				A64460A718A03D7000F5D221 /* AppDelegate.m */,
 				A64460A918A03D7000F5D221 /* Main.storyboard */,
@@ -147,7 +164,10 @@
 			isa = PBXGroup;
 			children = (
 				A644609F18A03D7000F5D221 /* Itsdaman-Info.plist */,
+				A6964E8C18A1A14300443743 /* Lime.jpg */,
+				A6964E8D18A1A14300443743 /* Sunflowers.jpg */,
 				A64460A018A03D7000F5D221 /* InfoPlist.strings */,
+				A6964E8A18A19E3900443743 /* 37x-Checkmark.png */,
 				A64460A318A03D7000F5D221 /* main.m */,
 				A64460A518A03D7000F5D221 /* Itsdaman-Prefix.pch */,
 			);
@@ -179,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A64460C618A03D7100F5D221 /* Build configuration list for PBXNativeTarget "Itsdaman" */;
 			buildPhases = (
+				CEE9C059089247BCA5E77786 /* Check Pods Manifest.lock */,
 				A644609018A03D7000F5D221 /* Sources */,
 				A644609118A03D7000F5D221 /* Frameworks */,
 				A644609218A03D7000F5D221 /* Resources */,
+				38C4F97669B74AFB81975683 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,7 +270,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6964E8B18A19E3900443743 /* 37x-Checkmark.png in Resources */,
+				A6964E8F18A1A14300443743 /* Sunflowers.jpg in Resources */,
 				A64460B018A03D7000F5D221 /* Images.xcassets in Resources */,
+				A6964E8E18A1A14300443743 /* Lime.jpg in Resources */,
 				A64460A218A03D7000F5D221 /* InfoPlist.strings in Resources */,
 				A64460AB18A03D7000F5D221 /* Main.storyboard in Resources */,
 			);
@@ -264,6 +289,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38C4F97669B74AFB81975683 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE9C059089247BCA5E77786 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A644609018A03D7000F5D221 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -276,6 +334,7 @@
 				A66DB2E318A0583600F20B10 /* ProfileViewController.m in Sources */,
 				A66DB2DA18A0457000F20B10 /* Itsdaman.m in Sources */,
 				A64460A418A03D7000F5D221 /* main.m in Sources */,
+				A6964E8918A189FD00443743 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +458,7 @@
 		};
 		A64460C718A03D7100F5D221 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B6A1BA49A87429DAC518B62 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -412,6 +472,7 @@
 		};
 		A64460C818A03D7100F5D221 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B6A1BA49A87429DAC518B62 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -13,7 +13,7 @@
 
 #import "Itsdaman.h"
 
-@interface MasterViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UITabBarDelegate>
+@interface MasterViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UITabBarDelegate, PFSignUpViewControllerDelegate>
 {
     
     __weak IBOutlet UICollectionView *myCollectionView;
@@ -35,27 +35,30 @@
     return cell;
 }
 
+
+
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return 1;
 }
 
-//-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
-//{
-//    if (item.tag == 1) {
-//        <#statements#>
-//    } else if (item.tag == 2) {
-//        
-//    } else if (item.tag == 3) {
-//        
-//    } else if (item.tag == 4) {
-//        
-//    }
-//    
-//}
-- (void)didReceiveMemoryWarning
+-(void)viewDidAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
+    if (![PFUser currentUser]) {
+        PFLogInViewController *login = [PFLogInViewController new];
+        UILabel * label = [[UILabel alloc]initWithFrame:CGRectZero];
+        login.signUpController.delegate = self;
+        label.text = @"Octopus Login";
+        [label sizeToFit];
+        login.logInView.logo = label;
+        [self presentViewController:login animated:YES completion:nil];
+    }
 }
+
+-(void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user
+{
+    [signUpController dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 @end
