@@ -97,7 +97,7 @@
             HUD.mode = MBProgressHUDModeCustomView;
             HUD.delegate = self;
             
-            PFObject *userPhoto = [PFObject objectWithClassName:@"UserPhoto"];
+            PFObject *userPhoto = [PFObject objectWithClassName:@"Photo"];
             [userPhoto setObject:imageFile forKey:@"imageFile"];
             userPhoto.ACL = [PFACL ACLWithUser:[PFUser currentUser]];
             
