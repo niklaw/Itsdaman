@@ -10,6 +10,5 @@
 
 @interface CameraViewController : UIViewController
 
--(void)uploadImage:(NSData *)imageData;
 
 @end

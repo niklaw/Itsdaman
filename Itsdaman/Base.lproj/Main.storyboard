@@ -53,7 +53,7 @@
             </objects>
             <point key="canvasLocation" x="660" y="-1167"/>
         </scene>
-        <!--Camera View Controller - Camera-->
+        <!--Camera View Controller-->
         <scene sceneID="h5D-F4-v9x">
             <objects>
                 <viewController id="Qqu-lG-X50" customClass="CameraViewController" sceneMemberID="viewController">
@@ -66,11 +66,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mj1-C2-11m">
-                                <rect key="frame" x="20" y="331" width="112" height="30"/>
+                                <rect key="frame" x="18" y="331" width="112" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Browse Pictures">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="browseButton:" destination="Qqu-lG-X50" eventType="touchUpInside" id="aY2-WT-Ohp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMx-cf-Vd6">
                                 <rect key="frame" x="216" y="331" width="84" height="30"/>
@@ -80,25 +83,15 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bV-D2-Nf4">
-                                <rect key="frame" x="108" y="467" width="102" height="30"/>
+                                <rect key="frame" x="107" y="467" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Upload Picture">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadButton:" destination="Qqu-lG-X50" eventType="touchUpInside" id="F6K-sA-LkB"/>
+                                </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2uz-D0-b7L">
-                                <rect key="frame" x="0.0" y="36" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="pAp-dc-8rb">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="se5-PP-Wky">
-                                            <connections>
-                                                <action selector="refreshButton:" destination="Qqu-lG-X50" id="WAs-xI-tCc"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z31-eK-Nmv">
                                 <rect key="frame" x="60" y="110" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -106,13 +99,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" id="ZVa-8p-DhQ"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8gs-Gf-0iu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="ndO-ID-0N5">
+                            <connections>
+                                <action selector="refreshImage:" destination="Qqu-lG-X50" id="pWr-O9-tkD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myImageView" destination="z31-eK-Nmv" id="bCH-tA-3BX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFw-Sx-7Vc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1384" y="-1003"/>
+            <point key="canvasLocation" x="1910" y="-1003"/>
         </scene>
         <!--Master View Controller - Home-->
         <scene sceneID="ufC-wZ-h7g">
@@ -237,7 +239,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="QDu-do-e5B"/>
-                        <segue destination="Qqu-lG-X50" kind="relationship" relationship="viewControllers" id="fS7-ec-s8F"/>
+                        <segue destination="GeJ-r2-Gxc" kind="relationship" relationship="viewControllers" id="fS7-ec-s8F"/>
                         <segue destination="kM6-zR-gvy" kind="relationship" relationship="viewControllers" id="PPG-Dm-ic0"/>
                         <segue destination="v0c-ci-MyX" kind="relationship" relationship="viewControllers" id="tym-nK-SnY"/>
                     </connections>
@@ -245,6 +247,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVo-iE-y0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="301" y="-207"/>
+        </scene>
+        <!--Navigation Controller - Camera-->
+        <scene sceneID="HIg-SU-bb0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GeJ-r2-Gxc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Camera" id="ZVa-8p-DhQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="axg-r0-KId">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qqu-lG-X50" kind="relationship" relationship="rootViewController" id="mXt-eJ-lgB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uox-QM-N24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384" y="-1003"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
